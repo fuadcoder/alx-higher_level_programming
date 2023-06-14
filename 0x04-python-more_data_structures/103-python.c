@@ -46,8 +46,8 @@ void print_python_bytes(PyObject *p)
  * @p: The Python Object
  * Return: no return
  */
-void print_python_list(
-		PyObject *p)
+
+void print_python_list(PyObject *p)
 {
 	long int size, i;
 	PyListObject *list;
@@ -67,3 +67,4 @@ void print_python_list(
 		if (PyBytes_Check(obj))
 			print_python_bytes(obj);
 	}
+}
